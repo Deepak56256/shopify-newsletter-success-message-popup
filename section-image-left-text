@@ -1,0 +1,245 @@
+<section id="{{ section.id }}">
+    <div class="ndffjccck">
+
+     <div class="asdasdasd rttert">
+  <div class="ndfjk">
+  <img class="dfjhdfju" src="{{ section.settings.addimg1 | img_url:'master' }}">
+  <h2>{{ section.settings.addheading }}</h2>
+    <p>{{ section.settings.addheading1 }}</p>
+  </div>
+   <div class="ndfjk">
+  {% render 'news' %}
+  </div>
+        </div>
+       <div class="asdasdasd dfjgsd">
+        <div class="dfgsd">
+  <img src="{{ section.settings.addimg | img_url:'master' }}">
+  </div>
+     </div>
+    </div>
+</section>
+<style>
+  .ndfjk .newsletter-form {
+    align-items: flex-start!important;
+    margin: 0!important;
+    max-width: 40rem!important;
+}
+  .ndfjk .newsletter-form__button {
+    width: 10.4rem;
+    margin: 0;
+    right: var(--inputs-border-width);
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    left: 104%;
+    border: 1px solid;
+    background-color: #015E5F!important;
+    color: white;
+    border-radius: 10px;
+}
+  .ndfjk {
+    width: 44%;
+}
+  .ndfjk h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+  .ndfjk p {
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    padding-bottom: 13px;
+}
+  .asdasdasd {
+    padding-bottom: 120px;
+    padding-top: 55px;
+}
+  .ndffjccck {
+    display: flex;
+}
+  .asdasdasd {
+    width: 50%;
+}
+ .dfjgsd {
+    background-color: #015E5F!important;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 160px;
+}
+  .ndffjccck {
+    display: flex;
+    height: 100vh!important;
+}
+.dfgsd {
+    width: 50%;
+}
+  .dfgsd img {
+    width: 100%;
+    /* height: 590px; */
+    object-fit: contain;
+    border: 7px solid #5D797B;
+    border-radius: 7px;
+}
+  img.dfjhdfju {
+    width: 44%;
+}
+  .asdasdasd.rttert {
+    padding-left: 61px;
+}
+  .asdasdasd.rttert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+  .ndfjk h2 {
+    font-size: 59px;
+    margin-bottom: 11px;
+    line-height: 66px;
+}
+  .ndfjk {
+    width: 80%;
+}
+  img.dfjhdfju {
+    position: absolute;
+    top: 5%;
+    width: 8%;
+}
+  .ndffjccck {
+    position: relative;
+}
+  .asdasdasd.rttert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DFD5CB;
+}
+  .ndfjk .field:after, .select:after, .customer .field:after, .customer select:after, .localization-form__select:after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: var(--inputs-border-width);
+    right: var(--inputs-border-width);
+    bottom: var(--inputs-border-width);
+    left: var(--inputs-border-width);
+    border: .1rem solid transparent;
+    border-radius: 10px!important;
+    box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground),var(--inputs-border-opacity));
+    transition: box-shadow var(--duration-short) ease;
+    z-index: 1;
+}
+.ndfjk .field__button>.svg-wrapper {
+    height: 2.5rem;
+    width: 10.5rem!important;
+}
+.ndfjk .newsletter-form__button {
+    width: 13.4rem!important;
+    margin: 0;
+    right: var(--inputs-border-width);
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    left: 104%;
+    border: 1px solid;
+    background-color: #015E5F!important;
+    color: white;
+    border-radius: 10px;
+}
+   .ndfjk  .field__input, .customer .field input {
+    flex-grow: 1;
+    text-align: left;
+    padding: 1.5rem;
+    margin: var(--inputs-border-width);
+    transition: box-shadow var(--duration-short) ease;
+    border-radius: 10px;
+}
+  @media only screen and (max-width: 767px) {
+ .ndffjccck {
+    display: block;
+    height: auto!important;
+}
+     .asdasdasd {
+    width: 100%;
+}
+    .asdasdasd.rttert {
+    padding-inline: 20px;
+}
+    .ndfjk {
+    width: 100%;
+}
+    img.dfjhdfju {
+    position: absolute;
+    top: 3%;
+    width: 28%;
+}
+    .ndfjk h2 {
+    font-size: 39px;
+    margin-bottom: 11px;
+    line-height: 45px;
+    margin-top: 67px;
+}
+    .ndfjk .newsletter-form {
+    align-items: flex-start!important;
+    margin: 0!important;
+    max-width: 28rem!important;
+}
+   .ndfjk .field {
+    position: relative;
+    width: 89%;
+    display: flex;
+    transition: box-shadow var(--duration-short) ease;
+}
+    .ndfjk .newsletter-form {
+    align-items: flex-start!important;
+    margin: 0!important;
+    max-width: 67%!important;
+}
+   .dfjgsd {
+    background-color: #015E5F!important;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+    .dfgsd {
+    width: 90%;
+}
+    .asdasdasd.rttert {
+    padding-bottom: 52px;
+}
+}
+</style>
+{% schema %}
+  {
+    "name": "custom launching",
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "addimg1",
+        "label": "Logo"
+      },
+       {
+        "type": "image_picker",
+        "id": "addimg",
+        "label": "image"
+      },
+      {
+        "type": "textarea",
+        "id": "addheading",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "addheading1",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "custom launching"
+      }
+    ]
+  }
+{% endschema %}
