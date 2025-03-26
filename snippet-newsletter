@@ -1,0 +1,228 @@
+<div {{ block.shopify_attributes }}>
+            {% form 'customer', class: 'newsletter-form' %}
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <div
+                class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                <div class="field">
+                  <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input"
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-success--{{ section.id }}"
+                    {% endif %}
+                    placeholder="{{ 'newsletter.label' | t }}"
+                    required
+                  >
+                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    {{ 'newsletter.label' | t }}
+                  </label>
+                  <button
+                    type="submit"
+                    class="newsletter-form__button field__button"
+                    name="commit"
+                    id="Subscribe"
+                    aria-label="{{ 'newsletter.button_label' | t }}"
+                  >
+                    <span class="svg-wrapper">
+                   Join the waitlist
+                    </span>
+                  </button>
+                </div>
+                {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                    <span class="svg-wrapper">
+                      {{- 'icon-error.svg' | inline_asset_content -}}
+                    </span>
+                    {{- form.errors.translated_fields.email | capitalize }}
+                    {{ form.errors.messages.email -}}
+                  </small>
+                {%- endif -%}
+              </div>
+              {%- if form.posted_successfully? -%}
+                <div class="sdbnfgjkbhsdjikbg">
+                <!-- <h3
+                  class="newsletter-form__message newsletter-form__message--success form__message"
+                  id="Newsletter-success--{{ section.id }}"
+                  tabindex="-1"
+                  autofocus
+                >
+                  <span class="svg-wrapper">
+                    {{- 'icon-success.svg' | inline_asset_content -}}
+                  </span>
+                
+               fkjngjidfhgjikdfhjighfghiudfnhidfnghndfn
+                </h3> -->
+  <div class="sdnfjnhs">                
+<img class="nksj" src="https://cdn.shopify.com/s/files/1/0932/7054/0613/files/Asset_8_4x_77ea56a2-3f32-4651-a92d-212e257ea1f2.png?v=1742988211">
+  </div>
+ <div class="sdnfjnxhs">       
+<h4>CONFIRM YOUR EMAIL</h4>
+ <h2>Thanks for signing up for <br>early access to Oac.</h2>  
+   <p class="sdnfgjksdh">You’ve officially secured a batch of our first-ever protein balls — made in small batches, packed with flavour, and only available to early subscribers like you.</p>
+             
+ <p class="asdxssxfasf">  Supply is limited. You’re on the list.</p>
+
+<p class="asdfsdsasf">We’ll be in touch soon with sneak peeks, launch details, and a few tasty surprises 👀</p>
+      <p class="asdfasf">Thanks,</p>      
+ <img class="snfgjksd" src="https://cdn.shopify.com/s/files/1/0932/7054/0613/files/instagram-logo-svgrepo-com.svg?v=1742990409">
+ </div>                 
+
+  <a class="sdfbnjksd" href="/password"><img class="snfssssgjksd" src="https://cdn.shopify.com/s/files/1/0932/7054/0613/files/close-circle-svgrepo-com.svg?v=1742990957"></a>
+                  
+                </div>
+              {%- endif -%}
+            {% endform %}
+          </div>
+
+
+          <style>
+            .sdbnfgjkbhsdjikbg {
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    width: 30%;
+    left: 35%;
+    text-align: center;
+    
+    padding-bottom: 21px;
+}
+            .sdnfjnhs {
+    background-color: #2A2927;
+    padding-top: 27px;
+    padding-bottom: 16px;
+}
+            .sdnfjnhs img.nksj {
+    width: 19%;
+}
+            .sdnfjnxhs h4 {
+    color: #6a6868;
+    font-size: 16px!important;
+    padding-top: 10px!important;
+}
+            .sdnfjnxhs h2 {
+    font-size: 44px!important;
+    line-height: 55px!important;
+    margin-top: -13px!important;
+}
+            .sdnfjnxhs h4 {
+    padding-top: 20px!important;
+}
+            .sdnfjnxhs a {
+    background-color: #015E5F;
+    color: white;
+    text-decoration: none;
+    padding-inline: 20px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+            .sdnfjnxhs h2 {
+    font-size: 44px!important;
+    line-height: 49px!important;
+    margin-top: -11px!important;
+    margin-bottom: 34px!important;
+}
+            .sdnfjnxhs p.sdnfgjksdh {
+    font-size: 16px;
+    color: #2e2d2d;
+    line-height: 22px;
+    margin-top: -6px;
+    margin-bottom: 21px;
+}
+            .sdnfjnxhs {
+    padding-inline: 20px!important;
+}
+ p.asdxssxfasf {
+    font-style: italic;
+    padding-top: 11px;
+    padding-bottom: 0;
+   color: #2e2d2d;
+}    
+            p.asdfsdsasf {
+    margin-top: -17px;
+    margin-bottom: -17px;
+               color: #2e2d2d;
+}
+            img.snfgjksd {
+    background-color: #F58722;
+    width: 39px;
+    padding: 9px;
+    border-radius: 17px;
+    margin-top: 31px;
+}
+            img.snfssssgjksd {
+    width: 62%;
+}
+            a.sdfbnjksd {
+    position: absolute;
+    top: 4%;
+    right: 0%;
+}
+       .sdbnfgjkbhsdjikbg {
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    width: 43%;
+    left: 29%;
+    height: 100vh;
+    text-align: center;
+    padding-bottom: 21px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 18px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+            .sdnfjnxhs {
+    padding-inline: 52px!important;
+}
+ .sdnfjnxhs p.sdnfgjksdh {
+    font-size: 16px;
+    color: #2e2d2d;
+    line-height: 22px;
+    margin-top: -6px;
+    margin-bottom: -23px!important;
+}
+
+@media only screen and (max-width: 767px) {
+    .sdbnfgjkbhsdjikbg {
+    background-color: white;
+    position: absolute;
+    top: 9%;
+    width: 91%;
+    left: 5%;
+    height: 81vh;
+    text-align: center;
+    padding-bottom: 21px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 18px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+  .sdnfjnxhs {
+    padding-inline: 20px!important;
+}
+  .sdnfjnxhs h2 {
+    font-size: 25px!important;
+    line-height: 34px!important;
+    margin-top: -11px!important;
+    margin-bottom: 16px!important;
+}
+  a.sdfbnjksd {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+}
+ 
+}
+          </style>
